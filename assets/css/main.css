@@ -1,0 +1,74 @@
+@import url(./base.css);
+.header{
+   position: sticky;
+   top: 0;
+   background: #FFF;
+   box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.25);
+   padding: 20px 0;
+   
+}
+.list ul{
+    display: flex;
+    gap:40px;
+    flex-wrap:wrap ;
+
+}
+.header .logo{
+
+display: flex;
+text-align: center;
+font-family: var(--mainF);
+color: var(--mainC);
+font-size: 14px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+width: 200px;
+height: 34px;
+padding-bottom: 0.065px;
+justify-content: center;
+align-items: center;
+gap: 10px;
+flex-wrap:wrap ;
+
+}
+.header .list a{
+    color: #101928;
+font-family: var(baseF);
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+.header .list  .active {
+    color: #101928;
+font-family: var(baseF);
+font-size: 16px;
+font-style: normal;
+font-weight: 900;
+line-height: normal;
+}
+.header .sing a{
+    width: 170px;
+    padding: 13px 49px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 10px;
+    font-family: Inter;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.header .sing a:first-of-type{
+    border: 1px solid var(--mainC);
+
+}
+.header .sing a:last-of-type{
+    background: var(--mainC);
+    color: #FFF;
+
+}
+
