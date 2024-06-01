@@ -1,4 +1,5 @@
 @import url(./base.css);
+
 .header{
    position: sticky;
    top: 0;
@@ -13,6 +14,7 @@
     flex-wrap:wrap ;
 
 }
+
 .header .logo{
 
 display: flex;
@@ -71,4 +73,23 @@ line-height: normal;
     color: #FFF;
 
 }
+.bar{
+    display: none;
+}
 
+@media (max-width:1282px){
+    .list{
+    display:none;
+    }
+    .bar{
+        display:inline-block ;
+        order: 1;
+    }
+    .sing{
+        display:none;
+    }
+   
+}
+
+
+ 

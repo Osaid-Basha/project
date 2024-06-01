@@ -1,0 +1,220 @@
+@import url(./base.css);
+
+.courses {
+    padding: 40px 0;
+    height: auto;
+}
+
+.courses .row {
+    gap: 30px;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.course-items {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    width: calc((100% - 30px) / 2);
+}
+
+.courset {
+    width: calc((100% - 30px) / 2);
+    padding: 20px 0;
+}
+
+.course-card {
+    position: relative;
+}
+
+.course-description {
+    width: calc((100% - 30px) / 2);
+}
+
+.course-card img {
+    width: 100%;
+    height: auto;
+    flex-shrink: 0;
+    fill: url(<path-to-image>) lightgray 50% / cover no-repeat, #C4C4C4;
+    box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.25);
+}
+
+.cours-info {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.cours-info span:first-of-type {
+    background-color: var(--mainC);
+    width: 123.451px;
+    height: 43.248px;
+    flex-shrink: 0;
+    color: #FFF;
+    font-family: var(--mainF);
+    font-size: 16.253px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-top: 20px;
+    padding: 10px;
+}
+
+.cours-info span:last-of-type {
+    width: 94.808px;
+    height: 32.929px;
+    flex-shrink: 0;
+    color: #FFF;
+    font-family: var(--mainF);
+    font-size: 21.67px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    align-self: flex-end;
+    margin-bottom: 40px;
+    margin-right: 20px;
+}
+
+.course-details {
+    width: 328px;
+    height: 104.515px;
+    flex-shrink: 0;
+}
+
+.course-details .row:last-of-type {
+    justify-content: flex-start;
+}
+
+.course-details .row:first-of-type .h3 {
+    color: #141E32;
+    font-family: var(--mainF);
+    font-size: 21.67px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.course-details .row:first-of-type p {
+    color: #545BE8;
+    font-family: var(--mainF);
+    font-size: 12.641px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.course-details .row:last-of-type p {
+    color: #969696;
+    font-family: Poppins;
+    font-size: 16.253px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.course-description {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+}
+
+.course-description span {
+    color: #545BE8;
+    font-family: var(--subF);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.course-description h3 {
+    color: #141E32;
+    font-family: var(--mainF);
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.course-description p {
+    color: #969696;
+    font-family: Poppins;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.course-description .sing a {
+    width: 170px;
+    padding: 13px 49px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 10px;
+    font-family: Inter;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    background: var(--mainC);
+    color: #FFF;
+}
+
+/* Media Queries */
+@media (max-width: 900px) {
+    .course-items, .course-description {
+        width: 100%;
+    }
+
+    .course-details {
+        width: 100%;
+    }
+
+    .course-details .row {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .course-description h3 {
+        font-size: 32px;
+    }
+
+    .course-description p {
+        font-size: 16px;
+    }
+
+    .course-description .sing a {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+@media (max-width: 600px) {
+    .courses {
+        padding: 20px 10px;
+    }
+
+    .course-details .row {
+        gap: 5px;
+    }
+
+    .course-description h3 {
+        font-size: 24px;
+    }
+
+    .course-description p {
+        font-size: 14px;
+    }
+
+    .course-description .sing a {
+        padding: 10px 20px;
+    }
+}

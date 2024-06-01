@@ -1,0 +1,101 @@
+@import url(./base.css);
+
+.task-1 {
+    height: 700px;
+    background: linear-gradient(180deg, #545BE8 0%, #272DB0 100%);
+}
+
+.task-1 .left-side, .task-1 .right-side {
+    width: calc((100% - 40px) / 2);
+}
+
+.task-1 .left-side {
+    flex-wrap: wrap;
+    flex-shrink: 0;
+    display: flex;
+}
+
+.left-side img {
+    margin-top: 50px;
+}
+
+.right-side {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.right-side h3 {
+    flex-shrink: 0;
+    color: #F0C932;
+    font-family: var(--subF);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.right-side h1 {
+    flex-shrink: 0;
+    color: #FFF;
+    font-family: var(--mainF);
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.right-side p {
+    flex-shrink: 0;
+    color: #DDD;
+    font-family: var(--mainF);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.right-side ul {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.right-side .color-text1 {
+    color: #F0C932;
+    font-family: Inter;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.right-side .color-text2 {
+    color: #DDD;
+    font-family: Inter;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .task-1 {
+        height: auto;
+        padding: 20px 0;
+    }
+
+    .task-1 .left-side, .task-1 .right-side {
+        width: 100%;
+    }
+
+    .right-side h1 {
+        font-size: 24px;
+    }
+
+    .right-side p, .right-side h3, .right-side .color-text2 {
+        font-size: 14px;
+    }
+}
